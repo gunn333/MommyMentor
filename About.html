@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MommyMentor</title>
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+
+        <!-- Bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="About.css" />
+    </head>
+    <body>
+        <section id="FirstSection">
+            <div id="carousel" class="carousel carousel-dark slide">
+                <!-- IMAGES -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="mighty1.png" class="d-block w-100"
+                            alt="Slide 1" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="mighty2.png" class="d-block w-100"
+                            alt="Slide 2" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="mighty3.png" class="d-block w-100"
+                            alt="Slide 3" />
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!--  SECOND SECTION -->
+
+        <section id="SecondSection">
+            <div class="container">
+                <br>
+                <br>
+                <br>
+                <h1>How are you feeling today?</h1>
+                <div class="emoji-card">
+                    <a href="#" class="btn emoji-button"
+                        onclick="showPopup('excited')"> <span
+                            class="emoji">&#x1F62C;</span></a>
+                    <a href="#" class="btn emoji-button"
+                        onclick="showPopup('happy')"> <span
+                            class="emoji">&#x1F604;</span></a>
+                    <a href="#" class="btn emoji-button"
+                        onclick="showPopup('neutral')"> <span
+                            class="emoji">&#x1F60A;</span></a>
+                    <a href="#" class="btn emoji-button"
+                        onclick="showPopup('sad')"> <span
+                            class="emoji">&#x1F610;</span></a>
+                    <a href="#" class="btn emoji-button"
+                        onclick="showPopup('depressed')"> <span
+                            class="emoji">&#x1F61E;</span></a>
+                </div>
+            </div>
+            <div class="popup" id="popup-excited">
+                <h1>You seem excited!</h1>
+                <p>It's great to see you in high spirits! Remember to channel
+                    that
+                    excitement into positive energy for your day.</p>
+                <button onclick="closePopup('excited')">Close</button>
+            </div>
+            <div class="popup" id="popup-happy">
+                <h1>You seem happy!</h1>
+                <p> Spread your joy and brighten someone's day with a smile!,
+                    Celebrate the small victories today. They're signs of
+                    progress!,
+                    The world is full of possibilities. What will you explore
+                    next?,
+                    Your happiness is contagious. Keep shining!,
+                    Embrace the present moment and cherish the happiness it
+                    brings.</p>
+                <button onclick="closePopup('happy')">Close</button>
+            </div>
+            <div class="popup" id="popup-neutral">
+                <h1>You seem neutral.</h1>
+                <p>It's okay to feel neutral sometimes. Be Neutral Just Like A
+                    Glass
+                    of Water!!</p>
+                <button onclick="closePopup('neutral')">Close</button>
+            </div>
+            <div class="popup" id="popup-sad">
+                <h1>You seem sad.</h1>
+                <p>It's okay not to be okay. Remember to be gentle to
+                    Yourself!!</p>
+                <button onclick="closePopup('sad')">Close</button>
+            </div>
+            <div class="popup" id="popup-depressed">
+                <h1>You seem depressed.</h1>
+                <p>It's Ok,Don't take stress Please!!Consider seeking
+                    professional
+                    help or talking to someone you trust about how you're
+                    feeling.</p>
+                <button onclick="closePopup('depressed')">Close</button>
+            </div>
+
+            <div class="overlay" onclick="closeAllPopups()"></div>
+
+            <script>
+        function showPopup(mood) {
+            document.getElementById('popup-' + mood).style.display = 'block';
+            document.querySelector('.overlay').style.display = 'block';
+        }
+
+        function closePopup(mood) {
+            document.getElementById('popup-' + mood).style.display = 'none';
+            document.querySelector('.overlay').style.display = 'none';
+        }
+
+        function closeAllPopups() {
+            var popups = document.querySelectorAll('.popup');
+            popups.forEach(function (popup) {
+                popup.style.display = 'none';
+            });
+            document.querySelector('.overlay').style.display = 'none';
+        }
+    </script>
+        </section>
+    </body>
+</html>
