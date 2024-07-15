@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mommy Mentor</title>
+        <link rel="stylesheet" href="child_dev.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Mommy Mentor</h1>
+            <button id="nav-toggle">☰</button>
+        </header>
+        <nav id="sidebar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#milestones">Developmental Milestones</a></li>
+                <li><a href="#tips">Parenting Tips</a></li>
+                <li><a href="#resources">Educational Resources</a></li>
+                <li><a href="#insights">Expert Insights</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+        <main id="main-content">
+            <section id="home">
+                <h2>Home</h2>
+                <p id="greeting">Loading...</p>
+                <div class="hero">
+                    <img src="mommy_hero.jpg" alt="Mommy Mentor">
+                    <div class="overlay"></div>
+                </div>
+            </section>
+            <hr>
+            <section id="milestones">
+                <h2>Developmental Milestones</h2>
+                <input type="range" id="milestonesRange" min="0" max="3"
+                    value="0">
+                <label id="milestonesLabel">0-12 months</label>
+                <div id="milestonesInfo">
+                    <h3>Infants (0-12 months)</h3>
+                    <ul>
+                        <li>Babies learn to grasp objects and babble.</li>
+                        <li>They start responding to their name and sitting
+                            without support.</li>
+                        <li>By around 12 months, they may begin saying their
+                            first words and taking their first steps.</li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+            <section id="stories">
+                <h2>Stories</h2>
+                <div class="story">
+                    <h3>The Brave Little Seed</h3>
+                    <p>Sunny, a small seed in a sunny field, wanted to grow into
+                        a tall flower. Despite hard ground and bad weather,
+                        Sunny persisted and became a beautiful sunflower. His
+                        story teaches us that perseverance leads to great
+                        outcomes.</p>
+                    <button class="read-aloud">Read Aloud</button>
+                    <button class="stop">Stop</button>
+                </div>
+                <div class="story">
+                    <h3>The Little Ant's Big Adventure</h3>
+                    <p>Andy, a tiny ant, decided to explore beyond his hill. He
+                        met friendly ladybugs, busy bees, and wise spiders who
+                        taught him bravery, kindness, and teamwork. Despite
+                        challenges, Andy learned that small individuals can
+                        achieve great things.</p>
+                    <button class="read-aloud">Read Aloud</button>
+                    <button class="stop">Stop</button>
+                </div>
+                <div class="story">
+                    <h3>The Unique Snowflake</h3>
+                    <p>Sparkle, a little snowflake, wished to be like other
+                        snowflakes. A wise old snowflake advised her to embrace
+                        her uniqueness. Sparkle danced through the sky, leaving
+                        a trail of beauty. Her story teaches us to appreciate
+                        our unique qualities.</p>
+                    <button class="read-aloud">Read Aloud</button>
+                    <button class="stop">Stop</button>
+                </div>
+            </section>
+            <hr>
+            <section id="tips">
+                <h2>Parenting Tips</h2>
+                <div class="tips">
+                    <div class="tip">
+                        <h3>Tip 1: Bonding with Your Baby</h3>
+                        <p>Take time to cuddle, talk, and sing to your baby
+                            every day. This helps them feel safe and loved.</p>
+                    </div>
+                    <div class="tip">
+                        <h3>Tip 2: Creating a Routine</h3>
+                        <p>Establishing a predictable schedule for feeding,
+                            napping, and bedtime helps your baby feel secure and
+                            comfortable.</p>
+                    </div>
+                    <div class="tip">
+                        <h3>Tip 3: Supporting Development</h3>
+                        <p>Provide age-appropriate toys and activities that
+                            stimulate your baby's senses and encourage
+                            exploration.</p>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="resources">
+                <h2>Educational Resources</h2>
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <h3>Interactive Learning Apps</h3>
+                        <p>Explore fun and educational apps for toddlers and
+                            young children.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>Books for Young Readers</h3>
+                        <p>Discover recommended books that promote early
+                            literacy and imagination.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>Parenting Podcasts</h3>
+                        <p>Listen to podcasts discussing parenting tips, child
+                            psychology, and more.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>Online Courses</h3>
+                        <p>Enroll in courses on child development, parenting
+                            strategies, and early education.</p>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="insights">
+                <h2>Expert Insights</h2>
+                <div class="experts">
+                    <div class="expert">
+                        <img src="expert1.jpg" alt="Expert 1">
+                        <h3>Dr. Jane Doe</h3>
+                        <p>Pediatrician specializing in child development. Dr.
+                            Doe shares her expertise on early childhood
+                            milestones and parenting tips.</p>
+                    </div>
+                    <div class="expert">
+                        <img src="expert2.jpg" alt="Expert 2">
+                        <h3>Prof. John Smith</h3>
+                        <p>Child psychologist with a focus on early learning and
+                            behavior. Prof. Smith provides insights into
+                            fostering emotional intelligence in children.</p>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="community">
+                <h2>Community</h2>
+                <p>Join our community of parents and caregivers! Share
+                    experiences, ask questions, and support each other on the
+                    journey of parenthood.</p>
+                <a href="#" id="join-now" class="btn">Join Now</a>
+            </section>
+            <hr>
+            <section id="faq">
+                <h2>FAQ</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h3>What are developmental milestones?</h3>
+                        <div class="accordion-content">
+                            <p>Developmental milestones are behavioral or
+                                physical checkpoints in children's development
+                                as they grow. They help track children's
+                                progress in areas like movement, speech, play,
+                                and social skills.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3>How can I support my child's development?</h3>
+                        <div class="accordion-content">
+                            <p>You can support your child's development by
+                                providing a safe and loving environment,
+                                engaging in interactive play, reading together,
+                                and encouraging healthy habits like good
+                                nutrition and sleep.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3>When should I be concerned about my child's
+                            development?</h3>
+                        <div class="accordion-content">
+                            <p>If you notice your child is not meeting
+                                developmental milestones for their age, talk to
+                                your pediatrician. Early intervention can be
+                                crucial in addressing any potential
+                                developmental issues.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Mommy Mentor © 2024</p>
+        </footer>
+        <script src="child_dev.js"></script>
+    </body>
+</html>
