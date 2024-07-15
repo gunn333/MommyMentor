@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>login self</title>
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+
+        <div class="background">
+            <!-- background image -->
+        </div>
+
+        <div class="container" id="container">
+
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i
+                                class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i
+                                class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+                    <span>or use your email for registration</span>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="text" placeholder="Create Username" />
+                    <input type="password" placeholder=" Create Password" />
+                    <button>Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container log-in-container">
+                <form action="#">
+                    <h1>Log in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i
+                                class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input type="text" placeholder="Username" />
+                    <input type="password" placeholder="Password" />
+                    <a href="#">Forgot your password?</a>
+                    <button id="loginButton">Log In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+
+                    <div class="overlay-panel overlay-left">
+                        <img src="mommy.jpeg">
+                        <h1>Welcome Back!</h1>
+                        <p>Nurturing families, one click.</p>
+                        <button class="ghost" id="logIn">Log In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <img src="mommy.jpeg">
+                        <h1>Hello, There!</h1>
+                        <p>Don't have an account? Sign Up for free</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="login.js"></script>
+    </body>
+</html>
