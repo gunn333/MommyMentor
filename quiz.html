@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Section</title>
+        <link rel="stylesheet" href="quiz.css">
+    </head>
+    <body>
+        <div class="quiz-container">
+            <h2>MommyQuiz</h2>
+            <form id="quiz-form">
+                <div class="question">
+                    <p>1. When was the last time you took a moment to prioritize
+                        your own well-being?</p>
+                    <label><input type="radio" name="question1"
+                            value="a">Today</label><br>
+                    <label><input type="radio" name="question1" value="b">
+                        Within the past week</label><br>
+                    <label><input type="radio" name="question1" value="c">It's
+                        been a while</label><br>
+                    <label><input type="radio" name="question1" value="d">I
+                        can't remember</label>
+                </div>
+                <div class="question">
+                    <p>2. How do you typically cope with stress or
+                        overwhelm?</p>
+                    <label><input type="radio" name="question2" value="a">
+                        Taking deep breaths or practicing
+                        mindfulness</label><br>
+                    <label><input type="radio" name="question2" value="b">
+                        Reaching out to a friend or loved one for
+                        support</label><br>
+                    <label><input type="radio" name="question2" value="c">
+                        Engaging in activities I enjoy, like reading or
+                        exercising</label><br>
+                    <label><input type="radio" name="question2" value="d">
+                        Ignoring it and pushing through</label><br>
+                </div>
+                <div class="question">
+                    <p>3. Have you ever reached out to a mental health
+                        professional for support with your emotional
+                        well-being?</p>
+                    <label><input type="radio" name="question3" value="a">
+                        Yes, and it was helpful</label><br>
+                    <label><input type="radio" name="question3" value="b">
+                        No, but I've considered it</label><br>
+                    <label><input type="radio" name="question3" value="c">
+                        No, I haven't thought about it</label><br>
+                    <label><input type="radio" name="question3" value="d">
+                        No, I don't think it's necessary</label><br>
+                </div>
+                <div class="question">
+                    <p>4. Do you often feel guilty for taking time for yourself
+                        or prioritizing your own needs?</p>
+                    <label><input type="radio" name="question4" value="a">
+                        No, I understand the importance of self-care</label><br>
+                    <label><input type="radio" name="question4" value="b">
+                        Sometimes, but I try to remind myself that it's
+                        necessary</label><br>
+                    <label><input type="radio" name="question4" value="c">
+                        Yes, I struggle with feeling selfish or like I'm
+                        neglecting others</label><br>
+                    <label><input type="radio" name="question4" value="d">
+                        I rarely prioritize my own needs over
+                        others</label><br>
+                </div>
+                <div class="question">
+                    <p>5. How supported do you feel in your role as a
+                        mother?</p>
+                    <label><input type="radio" name="question5" value="a">
+                        Very supported, I have a strong network of friends and
+                        family.</label><br>
+                    <label><input type="radio" name="question5" value="b">
+                        Somewhat supported, but I wish I had more people to lean
+                        on.</label><br>
+                    <label><input type="radio" name="question5" value="c">
+                        Not very supported, I often feel like I'm going it
+                        alone.</label><br>
+                    <label><input type="radio" name="question5" value="d">
+                        Not supported at all, I feel completely isolated and
+                        overwhelmed.</label><br>
+                </div>
+                <div class="question">
+                    <p>6. How well do you manage your stress levels on a
+                        day-to-day basis?</p>
+                    <label><input type="radio" name="question6" value="a">
+                        Very well, I have healthy coping mechanisms in
+                        place.</label><br>
+                    <label><input type="radio" name="question6" value="b">
+                        Somewhat well, but I could use some
+                        improvement.</label><br>
+                    <label><input type="radio" name="question6" value="c">
+                        Not very well, I often feel overwhelmed and stressed
+                        out.</label><br>
+                    <label><input type="radio" name="question6" value="d">
+                        Terribly, I feel like stress consumes me most
+                        days.</label><br>
+                </div>
+                <div class="question">
+                    <p>7. How often do you experience feelings of loneliness or
+                        isolation as a mother?</p>
+                    <label><input type="radio" name="question7" value="a">
+                        Rarely, I have a strong support network and feel
+                        connected to others.</label><br>
+                    <label><input type="radio" name="question7" value="b">
+                        Occasionally, when I'm going through a particularly
+                        challenging time.</label><br>
+                    <label><input type="radio" name="question7" value="c">
+                        Often, I feel like I'm the only one going through what
+                        I'm experiencing.</label><br>
+                    <label><input type="radio" name="question7" value="d">
+                        All the time, I feel completely isolated and alone in my
+                        struggles.</label><br>
+                </div>
+                <div class="question">
+                    <p>8. How would you rate your overall mental well-being at
+                        this moment?</p>
+                    <label><input type="radio" name="question8" value="a">
+                        Good, I feel content and fulfilled in my
+                        life.</label><br>
+                    <label><input type="radio" name="question8" value="b">
+                        Okay, but I could use some support or
+                        guidance.</label><br>
+                    <label><input type="radio" name="question8" value="c">
+                        Not great, I'm struggling with my mental health right
+                        now.</label><br>
+                    <label><input type="radio" name="question8" value="d">
+                        Terrible, I feel completely overwhelmed and
+                        hopeless.</label><br>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        <script src="quiz.js"></script>
+    </body>
+</html>
